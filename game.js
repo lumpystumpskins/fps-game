@@ -1,4 +1,4 @@
-// Initialize the scene
+ // Initialize the scene
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var renderer = new THREE.WebGLRenderer();
@@ -28,8 +28,8 @@ controls.lookSpeed = 0.1;
 controls.lookVertical = false;
 
 // Create simple walls (obstacles)
-function createWall(x, y, z, width, height, depth) {
-    var geometry = new THREE.BoxGeometry(width, height, depth);
+function createWall(0-100, 0-100, 20-30, 2, 20, 3) {
+    var geometry = new THREE.BoxGeometry(2, 20, 3);
     var material = new THREE.MeshLambertMaterial({ color: 0xFF0000 });
     var wall = new THREE.Mesh(geometry, material);
     wall.position.set(x, y, z);
